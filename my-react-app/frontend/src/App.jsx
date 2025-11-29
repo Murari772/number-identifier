@@ -33,7 +33,7 @@ export default function App() {
     fd.append("image", file);
 
     try {
-      const res = await fetch("digit-identifier-production.up.railway.app/identify", {
+      const res = await fetch("https://digit-identifier-production.up.railway.app/identify", {
         method: "POST",
         body: fd,
       });
